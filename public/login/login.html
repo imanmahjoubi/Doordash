@@ -1,0 +1,10 @@
+<div class="login">
+  <form role="form" name="loginForm">
+    <div>
+      <input class="login-input" type="text" name="userName" ng-model="user_name" placeholder="Type your username..." required></input>
+      <span class="error" ng-show="loginForm.userName.$error.required &amp;&amp;loginForm.userName.$dirty">
+       Please enter your User Name</span>
+      <input class="login-button" type="button" ng-click="goToChat('/chat')" value="Join the Doordash Chat"></button>
+    </div>
+  </form>
+</div>

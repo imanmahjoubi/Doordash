@@ -1,0 +1,5 @@
+<div ng-controller="SideBarController">
+  <div ng-repeat="room in room_list">
+    <label class="navlink" ng-click="updateChatRoom(room.id)">{{room.name}}</label>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div ng-controller="ChatRoomController" ng-model="Rooms.selected_room_id" ng-show="Rooms.selected_room_id != undefined &amp;&amp; Rooms.selected_room_id != null">
+  <div class="chat-header">
+    <h1 class="center">{{Rooms.selected_room_info.name}}</h1>
+    <h4 class="center"><span class="current-user">{{Users.logged_in_user}}</span><span class="other-user" ng-repeat="user in Rooms.selected_room_received_messages_users"> , {{user}}</span></h4>
+  </div>
+  <div class="chat-body">
+    <div ng-repeat="message in Rooms.selected_room_messages">
+      <div ng-class="message.name == Users.logged_in_user ? 'chat-sent' : 'chat-received'">{{message.message}}
+      </div>
+      <div id="{{message.id}}" ng-class="message.name == Users.logged_in_user ? 'chat-sent-name' : 'chat-received-name'">{{message.name}}</div>
+    </div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" placeholder="Type a message..." class="chat-input" ng-model="user_message" my-enter="saveChat()"></input>
+    <input type="button" value="Send" class="chat-button" ng-click="saveChat()"></input>
+  </div>
+</div>
