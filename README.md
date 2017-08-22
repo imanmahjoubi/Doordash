@@ -2,7 +2,7 @@
 * TLDR: *Build a chat app with real APIs*
 * Time: *3hr - 6hrs*
 *  frameworks: AngularJs
-* Show us what you got!
+
 
 ## Instructions
 
