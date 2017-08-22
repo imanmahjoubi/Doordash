@@ -1,4 +1,4 @@
-# DoorDash Frontend Interview Project
+# DoorDash Frontend Chatroom project using AngularJS
 * TLDR: *Build a chat app with real APIs*
 * Time: *3hr - 6hrs*
 *  frameworks: AngularJs
